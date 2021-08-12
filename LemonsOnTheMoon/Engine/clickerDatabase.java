@@ -25,9 +25,6 @@ public class clickerDatabase {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
-        //butt
-
     }
 	
 }

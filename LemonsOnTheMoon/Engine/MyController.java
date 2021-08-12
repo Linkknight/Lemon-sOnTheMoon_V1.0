@@ -19,7 +19,6 @@ public class MyController implements Initializable {
          @FXML
         private TextField txt;
 
-
         @FXML
         private Button btn;
         
@@ -36,16 +35,12 @@ public class MyController implements Initializable {
             
             Window owner = btn.getScene().getWindow();
             intClickCounter = intClickCounter + 1;
-            btn.setText("clicked: " + intClickCounter);
-            
-     
-            
+            btn.setText("clicked: " + intClickCounter);    
         }
 
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {
-            // TODO Auto-generated method stub
-            
+                   
         }
     
 }

@@ -1,5 +1,3 @@
-
-
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -11,10 +9,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-/*
- * 
- * 
- */
+
 public class ClickerMain extends Application {
 
     public static void main(String[] args) {
@@ -29,9 +24,6 @@ public class ClickerMain extends Application {
         Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoon.fxml"));
         stage.setScene(new Scene(mainPane));
         stage.show();
-        
-        
-
     }
 
 }
