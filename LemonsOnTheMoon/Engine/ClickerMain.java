@@ -13,10 +13,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 /*
  * 
- * Test
- * Brady test
- * Alexis Test
- * zhen test
+ * 
  */
 public class ClickerMain extends Application {
 
