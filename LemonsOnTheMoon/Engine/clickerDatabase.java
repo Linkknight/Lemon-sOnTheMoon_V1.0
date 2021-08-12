@@ -40,25 +40,5 @@ public class clickerDatabase {
         } catch (Exception e) {
             e.printStackTrace();
         }
-<<<<<<< Updated upstream
-=======
-        
-        /*
-         * 
-         * What variables to save?
-         * 
-         * Tree Growth/Age
-         * Game Time
-         * Amount of Lemons 
-         * 
-         * 
-         * 
-         * 
-         * 
-         */
-        
-
->>>>>>> Stashed changes
-    }
-	
+     }
 }
