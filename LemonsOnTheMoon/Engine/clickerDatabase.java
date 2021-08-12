@@ -10,6 +10,21 @@ public class clickerDatabase {
     static String password = "test";
     
     
+    public static void createClickerDatabase() {
+    	
+    	String sql = "drop database if exists clickerData; create database clickerData; go";
+    	
+    	try {
+            Connection con = DriverManager.getConnection(url, user, password);
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.executeUpdate(sql);
+                    
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    	
+    }
+    
     
     public static void updateValue() {
 
@@ -25,6 +40,25 @@ public class clickerDatabase {
         } catch (Exception e) {
             e.printStackTrace();
         }
+<<<<<<< Updated upstream
+=======
+        
+        /*
+         * 
+         * What variables to save?
+         * 
+         * Tree Growth/Age
+         * Game Time
+         * Amount of Lemons 
+         * 
+         * 
+         * 
+         * 
+         * 
+         */
+        
+
+>>>>>>> Stashed changes
     }
 	
 }
