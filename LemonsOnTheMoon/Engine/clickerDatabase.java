@@ -5,10 +5,9 @@ import java.sql.PreparedStatement;
 public class clickerDatabase {
 
 	static String url = "jdbc:mysql://localhost:3306/"
-            + "testdb?allowPublicKeyRetrieval=true&useSSL=false";
+            + "clickerDatabase?allowPublicKeyRetrieval=true&useSSL=false";
     static String user = "root";
     static String password = "test";
-    
     
     public static void createClickerDatabase() {
     	
