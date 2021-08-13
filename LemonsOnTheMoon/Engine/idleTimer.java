@@ -1,5 +1,3 @@
-
-
 import javafx.animation.Animation;
 	import javafx.animation.KeyFrame;
 	import javafx.animation.Timeline;
@@ -10,55 +8,30 @@ import javafx.animation.Animation;
 	import javafx.scene.Scene;
 	import javafx.util.Duration;
 
-public class idleTimer {
+import java.awt.event.ActionEvent;
+
+import javax.swing.Timer;
 	
-	    private final Timeline idleTimeline ;
-
-	    private final EventHandler<Event> userEventHandler ;
-
-	    public idleTimer(Duration idleTime, Runnable notifier, boolean startMonitoring) {
-	        idleTimeline = new Timeline(new KeyFrame(idleTime, e -> notifier.run()));
-	        idleTimeline.setCycleCount(Animation.INDEFINITE);
-
-	        userEventHandler = e -> notIdle() ; 
-
-	        if (startMonitoring) {
-	            startMonitoring();
-	        }
-	    }
-
-	    public idleTimer(Duration idleTime, Runnable notifier) {
-	        this(idleTime, notifier, false);
-	    }
-
-	    public void register(Scene scene, EventType<? extends Event> eventType) {
-	        scene.addEventFilter(eventType, userEventHandler);
-	    }
-
-	    public void register(Node node, EventType<? extends Event> eventType) {
-	        node.addEventFilter(eventType, userEventHandler);
-	    }
-
-	    public void unregister(Scene scene, EventType<? extends Event> eventType) {
-	        scene.removeEventFilter(eventType, userEventHandler);
-	    }
-
-	    public void unregister(Node node, EventType<? extends Event> eventType) {
-	        node.removeEventFilter(eventType, userEventHandler);
-	    }
-
-	    public void notIdle() {
-	        if (idleTimeline.getStatus() == Animation.Status.RUNNING) {
-	            idleTimeline.playFromStart();
-	        }
-	    }
-
-	    public void startMonitoring() {
-	        idleTimeline.playFromStart();
-	    }
-
-	    public void stopMonitoring() {
-	        idleTimeline.stop();
-	    }
+	
+public class idleTimer {
+	MyController con = new MyController();
+	Timer idleTime = new Timer(300000, null);
+	int lemons;
+	
+	
+	//1000 = 1 sec
+	//60 sec = 1 min
+	//300 sec = 5 min
+	//300 * 1000 = 300000 sec
+	public void setTimer() {
+		
+		if(con.onSubmitClick == true) {
+			(idleTime(300000) - 10000);
+		}
+			
+		if(idleTime == 0) {
+				lemons +1;
+					}	
+		
 	}
-
+}
