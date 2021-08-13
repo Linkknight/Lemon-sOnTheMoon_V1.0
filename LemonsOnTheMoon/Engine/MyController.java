@@ -33,16 +33,25 @@ public class MyController implements Initializable {
         @FXML
         void onSubmitClick(ActionEvent event) {
             
-            Window owner = btn.getScene().getWindow();
-            intClickCounter = intClickCounter + 1;
-            btn.setText("clicked: " + intClickCounter);    
+            
+      
+        }
+        
+        @FXML
+        void onStatusClick(ActionEvent event) {
+        	
+        }
+        
+        @FXML
+        void onUpgradeClick(ActionEvent event) {
+        	
         }
 
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {
                    
         }
-    
+    //testing
 }
 
  
