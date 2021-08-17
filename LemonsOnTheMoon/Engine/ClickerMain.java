@@ -14,9 +14,7 @@ import javafx.stage.Stage;
 public class ClickerMain extends Application {
 
     public static void main(String[] args) {
-
        launch(args);
-
     }
     
 

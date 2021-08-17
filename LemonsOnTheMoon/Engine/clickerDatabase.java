@@ -4,8 +4,7 @@ import java.sql.PreparedStatement;
 
 public class clickerDatabase {
 
-	static String url = "jdbc:mysql://localhost:3306/"
-            + "clickerDatabase?allowPublicKeyRetrieval=true&useSSL=false";
+	static String url = "jdbc:mysql://localhost:3306/" + "clickerDatabase?allowPublicKeyRetrieval=true&useSSL=false";
     static String user = "root";
     static String password = "test";
     
@@ -16,12 +15,10 @@ public class clickerDatabase {
     	try {
             Connection con = DriverManager.getConnection(url, user, password);
             PreparedStatement pst = con.prepareStatement(sql);
-            pst.executeUpdate(sql);
-                    
+            pst.executeUpdate(sql);         
         } catch (Exception e) {
             e.printStackTrace();
         }
-    	
     }
     
     
@@ -33,9 +30,7 @@ public class clickerDatabase {
             Connection con = DriverManager.getConnection(url, user, password);
             PreparedStatement pst = con.prepareStatement(sql);
             intRows = pst.executeUpdate(sql);
-        
             System.out.println(intRows);
-            
         } catch (Exception e) {
             e.printStackTrace();
         }
