@@ -31,15 +31,18 @@ public class MyController implements Initializable {
         
         @FXML
         void startGame(ActionEvent event) {
-        	System.out.println("Loading game now!");
-        	ClickerMain.openGame();
+        	try{
+        		new ClickerMain().openGame(null);
+        	} catch (Exception E){
+        		E.printStackTrace();
+        	}
         }
         
         @FXML
         void onSubmitClick(ActionEvent event) {
-        	//Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoon.fxml"));
-            //stage.setScene(new Scene(mainPane));
-            //stage.show();
+//        	Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoon.fxml"));
+//            stage.setScene(new Scene(mainPane));
+//            stage.show();
         }
         
         @FXML
