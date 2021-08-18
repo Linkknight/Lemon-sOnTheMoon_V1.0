@@ -24,5 +24,12 @@ public class ClickerMain extends Application {
         stage.setScene(new Scene(mainPane));
         stage.show();
     }
+    
+   
+    public void openGame(Stage stage) throws Exception{
+    	Pane gamePane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoon.fxml"));
+    	stage.setScene(new Scene(gamePane));
+    	stage.show();
+    }
 
 }

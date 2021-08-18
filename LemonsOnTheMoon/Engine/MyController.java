@@ -31,7 +31,8 @@ public class MyController implements Initializable {
         
         @FXML
         void startGame(ActionEvent event) {
-        	
+        	System.out.println("Loading game now!");
+        	ClickerMain.openGame();
         }
         
         @FXML
