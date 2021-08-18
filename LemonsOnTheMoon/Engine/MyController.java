@@ -31,25 +31,8 @@ public class MyController implements Initializable {
         private ImageView theMoon;
         
         @FXML
-        void startGame(ActionEvent event) {
-        	try{
-        		new ClickerMain().openGame(null);
-        	} catch (Exception E){
-        		E.printStackTrace();
-        	}
-        }
-        
-        @FXML
         void onSubmitClick(ActionEvent event) {
-<<<<<<< HEAD
-//        	Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoon.fxml"));
-//            stage.setScene(new Scene(mainPane));
-//            stage.show();
-=======
-            
-            
-      
->>>>>>> parent of 2b88acc (Update MyController.java)
+
         }
         
         @FXML
@@ -66,7 +49,6 @@ public class MyController implements Initializable {
         public void initialize(URL arg0, ResourceBundle arg1) {
                    
         }
-    //testing
 }
 
  
