@@ -24,6 +24,7 @@ public class MyController implements Initializable {
         
         @FXML
         private Pane rootpane;
+        
         int intClickCounter = 0;
         
         @FXML
@@ -40,23 +41,32 @@ public class MyController implements Initializable {
         
         @FXML
         void onSubmitClick(ActionEvent event) {
+<<<<<<< HEAD
 //        	Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoon.fxml"));
 //            stage.setScene(new Scene(mainPane));
 //            stage.show();
+=======
+            
+            
+      
+>>>>>>> parent of 2b88acc (Update MyController.java)
         }
         
         @FXML
         void onStatusClick(ActionEvent event) {
+        	
         }
         
         @FXML
         void onUpgradeClick(ActionEvent event) {
+        	
         }
 
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {
                    
         }
+    //testing
 }
 
  
