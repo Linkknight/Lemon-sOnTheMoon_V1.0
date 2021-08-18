@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="332.0" layoutY="115.0" mnemonicParsing="false" text="Start" />
+      <Button layoutX="316.0" layoutY="168.0" mnemonicParsing="false" text="How to Play" />
+      <Button layoutX="326.0" layoutY="222.0" mnemonicParsing="false" text="Settings" />
+      <Label layoutX="223.0" layoutY="14.0" text="Lemons On The Moon">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
