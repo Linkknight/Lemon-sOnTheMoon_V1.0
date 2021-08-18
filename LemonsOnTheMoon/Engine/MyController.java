@@ -32,10 +32,7 @@ public class MyController implements Initializable {
         
         @FXML
         void onSubmitClick(ActionEvent event) {
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of d9f5254 (FXML Swap)
         }
         
         @FXML

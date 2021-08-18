@@ -24,17 +24,16 @@ public class ClickerMain extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-<<<<<<< HEAD
-       URL url = new File("C:\\Users\\james\\Documents\\GitHub\\Lemon-sOnTheMoon_V1.0\\LemonsOnTheMoon\\Engine\\LemonsOnTheMoonTitle.fxml").toURI().toURL();
-       Parent root = FXMLLoader.load(url);
-       stage.setScene(new Scene(root,200, 200));
-       stage.setFullScreen(true);
-       stage.show();
-=======
+//       URL url = new File("C:\\Users\\james\\Documents\\GitHub\\Lemon-sOnTheMoon_V1.0\\LemonsOnTheMoon\\Engine\\LemonsOnTheMoonTitle.fxml").toURI().toURL();
+//       Parent root = FXMLLoader.load(url);
+//       stage.setScene(new Scene(root,200, 200));
+//       stage.setFullScreen(true);
+//       stage.show();
+    	
         Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoon.fxml"));
         stage.setScene(new Scene(mainPane));
         stage.show();
->>>>>>> parent of d9f5254 (FXML Swap)
+
     }
 
 }
