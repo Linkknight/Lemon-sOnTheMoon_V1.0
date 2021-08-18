@@ -20,7 +20,7 @@ public class ClickerMain extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoon.fxml"));
+        Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoonTitle.fxml"));
         stage.setScene(new Scene(mainPane));
         stage.show();
     }

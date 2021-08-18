@@ -30,7 +30,15 @@ public class MyController implements Initializable {
         private ImageView theMoon;
         
         @FXML
+        void startGame(ActionEvent event) {
+        	
+        }
+        
+        @FXML
         void onSubmitClick(ActionEvent event) {
+        	//Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoon.fxml"));
+            //stage.setScene(new Scene(mainPane));
+            //stage.show();
         }
         
         @FXML
