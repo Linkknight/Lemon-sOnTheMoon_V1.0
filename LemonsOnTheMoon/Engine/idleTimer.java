@@ -16,13 +16,17 @@ import java.util.TimerTask;
 	
 class idleTimer {
 	Timer timer = new Timer();
+	long time = 60000l;
 	void schedulde(TimerTask task, long milliseconds) {
 		
 	
  timer.schedule(new TimerTask(){
 	public void run() {
 		System.out.println("IT WORKS");
-	}
- },60000l);
+		
+			}
+	
+		},time);
+	
 	}
 }	

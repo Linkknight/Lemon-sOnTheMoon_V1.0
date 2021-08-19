@@ -76,6 +76,9 @@ public class MyController implements Initializable {
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
+      	  
+      	//currentTime = idle.time;
+        //currentTime - intClickCounter = newTime;
       	 }
         
         //switch scene to upgrade
