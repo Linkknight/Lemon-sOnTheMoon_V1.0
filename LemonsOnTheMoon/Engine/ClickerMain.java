@@ -30,7 +30,7 @@ public class ClickerMain extends Application {
 //       stage.setFullScreen(true);
 //       stage.show();
     	
-        Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("LemonOnTheMoon.fxml"));
+        Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("Home.fxml"));
         stage.setScene(new Scene(mainPane));
         stage.show();
 
