@@ -1,4 +1,5 @@
-/*import javafx.animation.Animation;
+
+import javafx.animation.Animation;
 	import javafx.animation.KeyFrame;
 	import javafx.animation.Timeline;
 	import javafx.event.Event;
@@ -9,30 +10,21 @@
 	import javafx.util.Duration;
 
 import java.awt.event.ActionEvent;
-
-import javax.swing.Timer;
+import java.util.Timer;
+import java.util.TimerTask;
 	
 	
-public class idleTimer {
-	MyController con = new MyController();
-	Timer idleTime = new Timer(300000, null);
-	int lemons;
-	
-	
-	//1000 = 1 sec
-	//60 sec = 1 min
-	//300 sec = 5 min
-	//300 * 1000 = 300000 sec
-	public void setTimer() {
+class idleTimer {
+	Timer timer = new Timer();
+	void schedulde(TimerTask task, long milliseconds) {
 		
-		if(con.onSubmitClick == true) {
-			(idleTime(300000) - 10000);
-		}
-			
-		if(idleTime == 0) {
-				lemons +1;
-					}	
+	
+ timer.schedule(new TimerTask(){
+	public void run() {
+		System.out.println("IT WORKS");
 		
 	}
-}
-*/
+	
+	},60000l);
+	
+}}	
