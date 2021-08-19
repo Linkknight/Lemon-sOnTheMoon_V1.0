@@ -1,6 +1,7 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.*;
 
 public class clickerDatabase {
 
@@ -25,7 +26,7 @@ public class clickerDatabase {
     public static void updateValue() {
 
         int intRows;
-        String sql = "use clickerData UPDATE Books SET Title = 'A Casual Vacancy' Where id=2";
+        String sql = "use clickerData UPDATE ";
         try {
             Connection con = DriverManager.getConnection(url, user, password);
             PreparedStatement pst = con.prepareStatement(sql);
