@@ -22,9 +22,7 @@ class idleTimer {
  timer.schedule(new TimerTask(){
 	public void run() {
 		System.out.println("IT WORKS");
-		
 	}
-	
-	},60000l);
-	
-}}	
+ },60000l);
+	}
+}	
