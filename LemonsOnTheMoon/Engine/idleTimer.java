@@ -14,15 +14,19 @@ import java.util.Timer;
 import java.util.TimerTask;
 	
 	
-class idleTimer {
-	Timer timer = new Timer();
-	void schedulde(TimerTask task, long milliseconds) {
-		
+public class idleTimer {
 	
- timer.schedule(new TimerTask(){
-	public void run() {
-		System.out.println("IT WORKS");
+	public static void main(String[] args) {
+		Timer timer = new Timer();
+		long start = 30000l;
+		long time = 60000l;
+		TimerTask task = new TimerTask(){
+		public void run() {
+			System.out.println("IT WORKS");
+			
+		}
+		
+	};	
+		timer.scheduleAtFixedRate(task,start,time);
+		}
 	}
- },60000l);
-	}
-}	

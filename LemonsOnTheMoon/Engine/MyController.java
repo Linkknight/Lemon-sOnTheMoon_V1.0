@@ -58,7 +58,7 @@ public class MyController implements Initializable {
         
         @FXML
         private TextField txtuserPassword;
-        
+        idleTimer ti = new idleTimer();
         
         //switch scene to play
         public void playClick(ActionEvent event) throws IOException {
@@ -67,6 +67,7 @@ public class MyController implements Initializable {
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
+      	  idleTimer.main(null);
       	 }
         
         //switch scene to status
@@ -76,7 +77,11 @@ public class MyController implements Initializable {
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
+      	 
+      	//currentTime = idle.time;
+        //currentTime - intClickCounter = newTime;
       	 }
+        
         
         //switch scene to upgrade
         public void upgradeClick(ActionEvent event) throws IOException {
