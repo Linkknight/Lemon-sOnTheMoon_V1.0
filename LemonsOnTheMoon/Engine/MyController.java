@@ -107,35 +107,7 @@ public class MyController implements Initializable {
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
-      	 }
-        
-        
-        static String url = "jdbc\\:mysql://localhost:3306/"
-                + "people?allowPublicKeyRetrieval=true&useSSL=false";
-        static String user = "root";
-        static String password = "8162001";
-        
-        public  void insertInformation(String firstName, String lastName, String email, String userName, String userPassword) {
-        	
-        	
-
-
-            String sql = "INSERT INTO People(firstName, lastName, email, username, userpassword) Values"
-            		+ "('" + firstName + "','" + lastName + "','" + email + "','" + userName + "','" + userPassword + "')";
-                    
-            try {
-                Connection con = DriverManager.getConnection(url, user, password);
-                Statement st = con.createStatement();
-                st.executeUpdate(sql);
-            
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-        }
-                
-        
-        
+      	 }   
 
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {
