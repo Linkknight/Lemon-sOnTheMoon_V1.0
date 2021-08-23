@@ -20,7 +20,7 @@
       </ImageView>
       <Button fx:id="upgrade" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#upgradeClick" prefHeight="42.0" prefWidth="149.0" text="Upgrade" />
       <Button fx:id="btn" layoutX="76.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" scaleX="5.0" scaleY="3.0" style="-fx-background-image: .button {  background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;};" />
-      <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#statusClick" prefHeight="42.0" prefWidth="149.0" text="Status" />
+      <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#statusClick" prefHeight="42.0" prefWidth="149.0" text="Stats" />
       <TextField alignment="CENTER" layoutX="338.0" layoutY="14.0" promptText="CurrencyAmount" />
       <Button layoutX="-32.0" layoutY="609.0" mnemonicParsing="false" onAction="#goBackHomeClick" prefHeight="42.0" prefWidth="149.0" text="Home" />
    </children>

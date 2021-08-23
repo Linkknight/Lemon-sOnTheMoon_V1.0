@@ -60,7 +60,9 @@ public class MyController implements Initializable {
         private TextField txtuserPassword;
         idleTimer ti = new idleTimer();
         
-        //switch scene to play
+
+        //These are all the buttons used to switch between screens.
+        //Switch to the play area.
         public void playClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -68,9 +70,8 @@ public class MyController implements Initializable {
       	  stage.setScene(scene);
       	  stage.show();
       	  idleTimer.main(null);
-      	 }
-        
-        //switch scene to status
+      	 }      
+        //Switch to the Statistics area.
         public void statusClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Status.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -81,9 +82,7 @@ public class MyController implements Initializable {
       	//currentTime = idle.time;
         //currentTime - intClickCounter = newTime;
       	 }
-        
-        
-        //switch scene to upgrade
+        //Switch to the Upgrades area.
         public void upgradeClick(ActionEvent event) throws IOException {
         	  root = FXMLLoader.load(getClass().getResource("Upgrade.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -91,8 +90,9 @@ public class MyController implements Initializable {
         	  stage.setScene(scene);
         	  stage.show();
         	 }
-    
-      //Go back to play scene
+     
+      //Go back buttons for the upgrades screen, the stats screen, and to return to main menu from game screen.
+        //Back button for Upgrades screen.
         public void goBackClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -100,7 +100,7 @@ public class MyController implements Initializable {
       	  stage.setScene(scene);
       	  stage.show();
       	 }
-        
+        //Back button to return to the main menu.
         public void goBackHomeClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
