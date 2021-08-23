@@ -101,6 +101,14 @@ public class MyController implements Initializable {
       	  stage.show();
       	 }
         
+        public void goBackHomeClick(ActionEvent event) throws IOException {
+      	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+      	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+      	  scene = new Scene(root);
+      	  stage.setScene(scene);
+      	  stage.show();
+      	 }
+        
         
         static String url = "jdbc\\:mysql://localhost:3306/"
                 + "people?allowPublicKeyRetrieval=true&useSSL=false";
@@ -125,24 +133,8 @@ public class MyController implements Initializable {
             }
 
         }
+                
         
-        public void saveClick(ActionEvent event) {
-        	 String firstNames = txtfirstName.getText();
-      	   String lastName = txtlastName.getText();
-      	   String email = txtemail.getText();
-      	   String userName = txtuserName.getText();
-      	   String userPassword = txtuserPassword.getText();
-     	   
-     		insertInformation(firstNames,lastName,email,userName,userPassword);
-        }
-        
-        public void goBackHomeClick(ActionEvent event) throws IOException {
-        	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
-        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        	  scene = new Scene(root);
-        	  stage.setScene(scene);
-        	  stage.show();
-        	 }
         
 
         @Override
