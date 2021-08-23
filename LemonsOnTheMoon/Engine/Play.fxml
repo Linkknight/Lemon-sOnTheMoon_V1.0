@@ -17,5 +17,6 @@
       </ImageView>
       <Button layoutX="55.0" layoutY="575.0" mnemonicParsing="false" onAction="#statusClick" prefHeight="42.0" prefWidth="149.0" text="Status" />
       <TextField alignment="CENTER" layoutX="686.0" layoutY="14.0" promptText="CurrencyAmount" />
+      <Button layoutX="55.0" layoutY="470.0" mnemonicParsing="false" onAction="#goBackHomeClick" prefHeight="42.0" prefWidth="149.0" text="Home" />
    </children>
 </Pane>

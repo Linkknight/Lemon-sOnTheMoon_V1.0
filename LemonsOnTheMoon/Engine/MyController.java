@@ -136,6 +136,14 @@ public class MyController implements Initializable {
      		insertInformation(firstNames,lastName,email,userName,userPassword);
         }
         
+        public void goBackHomeClick(ActionEvent event) throws IOException {
+        	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        	  scene = new Scene(root);
+        	  stage.setScene(scene);
+        	  stage.show();
+        	 }
+        
 
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {
