@@ -12,7 +12,7 @@
    <children>
       <ImageView fitHeight="728.0" fitWidth="752.0" layoutX="-6.0" layoutY="-183.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../assets/SpaceBackground.png" />
+            <Image url="@assets/SpaceBackground.png" />
          </image>
       </ImageView>
       <Button fx:id="startButton" layoutX="24.0" layoutY="142.0" mnemonicParsing="false" onAction="#playClick" prefHeight="34.0" prefWidth="184.0" text="Play">
@@ -37,7 +37,7 @@
       <TextArea layoutX="19.0" layoutY="421.0" prefHeight="64.0" prefWidth="386.0" text="Made in collaboration with: Brady Blake, Zach Sylvester, Alexis Temple, James Watson, and Zhenxing Zheng.     Neumont - Intro to Project Systems." wrapText="true" />
       <ImageView fitHeight="773.0" fitWidth="552.0" layoutX="405.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../assets/Moon.png" />
+            <Image url="@assets/Moon.png" />
          </image>
       </ImageView>
    </children>
