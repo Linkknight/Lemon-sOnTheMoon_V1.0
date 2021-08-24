@@ -8,14 +8,20 @@
 
 <Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
    <children>
-      <Button fx:id="upgrade" layoutX="656.0" layoutY="575.0" mnemonicParsing="false" onAction="#upgradeClick" prefHeight="42.0" prefWidth="149.0" text="Upgrade" />
-      <Button fx:id="btn" layoutX="412.0" layoutY="533.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0" scaleX="5.0" scaleY="3.0" style="-fx-background-image: .button {  background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;};" />
-      <ImageView fx:id="theMoon" fitHeight="326.0" fitWidth="323.0" layoutX="264.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="854.0" fitWidth="906.0" layoutX="-2.0" layoutY="-120.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Asserts/Moon.png" />
+            <Image url="@SpaceBackground.png" />
          </image>
       </ImageView>
-      <Button layoutX="55.0" layoutY="575.0" mnemonicParsing="false" onAction="#statusClick" prefHeight="42.0" prefWidth="149.0" text="Status" />
-      <TextField alignment="CENTER" layoutX="686.0" layoutY="14.0" promptText="CurrencyAmount" />
+      <ImageView fitHeight="651.0" fitWidth="665.0" layoutX="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Moon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="upgrade" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#upgradeClick" prefHeight="42.0" prefWidth="149.0" text="Upgrade" />
+      <Button fx:id="btn" layoutX="76.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" scaleX="5.0" scaleY="3.0" style="-fx-background-image: .button {  background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;};" />
+      <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#statusClick" prefHeight="42.0" prefWidth="149.0" text="Stats" />
+      <TextField alignment="CENTER" layoutX="338.0" layoutY="14.0" promptText="CurrencyAmount" />
+      <Button layoutX="-32.0" layoutY="609.0" mnemonicParsing="false" onAction="#goBackHomeClick" prefHeight="42.0" prefWidth="149.0" text="Home" />
    </children>
 </Pane>
