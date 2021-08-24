@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="howToPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="howToPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
    <children>
       <ImageView fitHeight="617.0" fitWidth="907.0" layoutX="-8.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/SpaceBackground.png" />
          </image>
       </ImageView>
-      <Button fx:id="returnbtn" layoutX="274.0" layoutY="336.0" mnemonicParsing="false" text="Return" />
+      <Button fx:id="returnbtn" layoutX="274.0" layoutY="336.0" mnemonicParsing="false" onAction="#goBackHomeClick" text="Return" />
       <Label fx:id="howtolbl" layoutX="219.0" prefHeight="73.0" prefWidth="173.0" text="How To Play" textFill="#e8e84d">
          <font>
             <Font name="Chiller" size="48.0" />
