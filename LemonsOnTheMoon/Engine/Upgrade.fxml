@@ -12,6 +12,6 @@
             <Font size="27.0" />
          </font>
       </Label>
-      <Button layoutX="324.0" layoutY="286.0" mnemonicParsing="false" onAction="#goBackClick" text="Go back" />
+      <Button layoutX="324.0" layoutY="286.0" mnemonicParsing="false" onAction="#goToPlay" text="Go back" />
    </children>
 </AnchorPane>
