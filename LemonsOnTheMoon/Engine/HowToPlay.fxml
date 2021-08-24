@@ -2,23 +2,58 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane fx:id="howtoPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../Downloads/SpaceBackground.png" />
+         </image>
+      </ImageView>
       <Button fx:id="returnbtn" layoutX="274.0" layoutY="336.0" mnemonicParsing="false" text="Return" />
-      <Label fx:id="howtolbl" layoutX="169.0" text="How To Play">
+      <Label fx:id="howtolbl" layoutX="210.0" prefHeight="64.0" prefWidth="180.0" text="How To Play" textFill="YELLOW">
          <font>
-            <Font name="Comic Sans MS" size="48.0" />
+            <Font name="Chiller" size="45.0" />
          </font>
       </Label>
-      <Label fx:id="howtolbl1" layoutX="14.0" layoutY="67.0" prefHeight="17.0" prefWidth="600.0" text="This is an idle clicker game which means that the player doesn't have to interact 24/7 for the game to progress." />
-      <Label fx:id="howtolbl2" layoutX="19.0" layoutY="84.0" prefHeight="17.0" prefWidth="591.0" text="There are buttons on the side of the screen that allow the player to interact with the game when they want." />
-      <Label fx:id="howtolbl3" layoutX="14.0" layoutY="101.0" prefHeight="17.0" prefWidth="582.0" text="The buttons include an iteract button that speeds up the growth rate of the game only when it is pushed" />
-      <Label fx:id="howtolbl4" layoutX="19.0" layoutY="118.0" prefHeight="25.0" prefWidth="573.0" text="an upgrade button that changes how the game functions includeing speeding up the growth rate" />
-      <Label fx:id="howtolbl5" layoutX="19.0" layoutY="143.0" prefHeight="17.0" prefWidth="519.0" text=" as well as increasing the amount of lemons the player recives.  There is also a save button" />
-      <Label fx:id="howtolbl6" layoutX="19.0" layoutY="167.0" prefHeight="17.0" prefWidth="519.0" text="which allows the player to save the current upgrades and collected lemon count" />
+      <Label fx:id="howtolbl1" contentDisplay="TEXT_ONLY" layoutX="5.0" layoutY="64.0" prefHeight="44.0" prefWidth="600.0" text="This is an idle clicker game which means that the player doesn't have to interact 24/7 for the " textFill="#f7f2f2">
+         <font>
+            <Font name="Corbel" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="howtolbl2" layoutX="5.0" layoutY="113.0" prefHeight="17.0" prefWidth="600.0" text=" game to progress.  There are buttons on the side of the screen that allow the player to interact with the " textFill="#fffdfd">
+         <font>
+            <Font name="Corbel" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="howtolbl3" layoutX="10.0" layoutY="155.0" prefHeight="17.0" prefWidth="582.0" text=" game when they want.  The buttons include an iteract button that speeds up the" textFill="#f7f3f3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="howtolbl4" layoutX="9.0" layoutY="188.0" prefHeight="25.0" prefWidth="582.0" text="growth rate of the game only when it is pushed.  An upgrade button that changes how the game " textFill="#f5f4f4">
+         <font>
+            <Font name="Corbel" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="howtolbl5" layoutX="3.0" layoutY="224.0" prefHeight="17.0" prefWidth="594.0" text=" functions including speeding up the growth rate as well as increasing the amount of lemons " textFill="#f0ecec">
+         <font>
+            <Font name="Corbel" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="howtolbl6" layoutX="4.0" layoutY="258.0" prefHeight="17.0" prefWidth="594.0" text="the player recives.  There is also a save button  which allows the player to save the current upgrades" textFill="#f5f2f2">
+         <font>
+            <Font name="Corbel" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="howtolbl7" layoutX="14.0" layoutY="285.0" prefHeight="20.0" prefWidth="218.0" text=" and collected lemon count" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
