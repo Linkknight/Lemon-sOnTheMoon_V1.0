@@ -80,6 +80,9 @@ public class MyController implements Initializable {
 <<<<<<< HEAD
 =======
       	  idleTimer.main(null);
+<<<<<<< HEAD
+>>>>>>> parent of 595da88 (Whitespace Cleanup)
+=======
 >>>>>>> parent of 595da88 (Whitespace Cleanup)
       	 }
         
@@ -116,6 +119,7 @@ public class MyController implements Initializable {
       	 }
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         static String url = "jdbc\\:mysql://localhost:3306/"
                 + "people?allowPublicKeyRetrieval=true&useSSL=false";
@@ -149,6 +153,8 @@ public class MyController implements Initializable {
         }
         
 =======
+=======
+>>>>>>> parent of 595da88 (Whitespace Cleanup)
         public void goBackHomeClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
