@@ -20,8 +20,8 @@
             <Font name="Chiller" size="64.0" />
          </font>
       </Label>
-      <Button layoutX="160.0" layoutY="375.0" mnemonicParsing="false" onAction="#goBackClick" text="Back To Game" />
-      <Button layoutX="461.0" layoutY="375.0" mnemonicParsing="false" onAction="#saveClick" text="Save Game" />
+      <Button layoutX="160.0" layoutY="375.0" mnemonicParsing="false" onAction="#goToPlay" text="Back To Game" />
+      <Button layoutX="461.0" layoutY="375.0" mnemonicParsing="false" text="Save Game" />
       <Label layoutX="220.0" layoutY="183.0" text="Lemons per minute" textFill="YELLOW" />
       <Label layoutX="227.0" layoutY="144.0" text="Lemons per Tree" textFill="#f2ff00" />
       <TextField layoutX="359.0" layoutY="140.0" promptText="LemsPerTree" />

@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
    <children>
-      <ImageView fitHeight="723.0" fitWidth="769.0" layoutY="-197.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="723.0" fitWidth="723.0" layoutY="-197.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/SpaceBackground.png" />
          </image>
@@ -19,6 +19,6 @@
             <Font name="Chiller" size="48.0" />
          </font>
       </Label>
-      <Button layoutX="328.0" layoutY="384.0" mnemonicParsing="false" onAction="#goBackClick" text="Go back" />
+      <Button layoutX="328.0" layoutY="384.0" mnemonicParsing="false" onAction="#goToPlay" text="Go back" />
    </children>
 </AnchorPane>
