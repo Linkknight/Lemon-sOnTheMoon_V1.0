@@ -24,12 +24,12 @@
             <Font name="Chiller" size="45.0" />
          </font>
       </Label>
-      <Button layoutX="24.0" layoutY="207.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="184.0" text="How To Play">
+      <Button layoutX="24.0" layoutY="207.0" mnemonicParsing="false" onAction="#HowToPlay" prefHeight="34.0" prefWidth="184.0" text="How To Play">
          <font>
             <Font name="Corbel Bold" size="21.0" />
          </font>
       </Button>
-      <Button layoutX="24.0" layoutY="272.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="184.0" text="Settings">
+      <Button layoutX="24.0" layoutY="272.0" mnemonicParsing="false" onAction="#Settings" prefHeight="40.0" prefWidth="184.0" text="Settings">
          <font>
             <Font name="Corbel Bold" size="21.0" />
          </font>

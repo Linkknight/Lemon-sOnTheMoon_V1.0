@@ -69,7 +69,15 @@ public class MyController implements Initializable {
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
-      	 }        
+      	 }      
+        //Switch scene to how to play screen.
+        public void HowToPlay(ActionEvent event) throws IOException {
+        	  root = FXMLLoader.load(getClass().getResource("HowToPlay.fxml"));
+        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        	  scene = new Scene(root);
+        	  stage.setScene(scene);
+        	  stage.show();
+        	 }
         //switch scene to status
         public void statusClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Status.fxml"));
@@ -78,6 +86,14 @@ public class MyController implements Initializable {
       	  stage.setScene(scene);
       	  stage.show();
       	 }       
+        //Switch to settings.
+        public void Settings(ActionEvent event) throws IOException {
+        	  root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
+        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        	  scene = new Scene(root);
+        	  stage.setScene(scene);
+        	  stage.show();
+        	 }
         //switch scene to upgrade
         public void upgradeClick(ActionEvent event) throws IOException {
         	  root = FXMLLoader.load(getClass().getResource("Upgrade.fxml"));
@@ -86,7 +102,18 @@ public class MyController implements Initializable {
         	  stage.setScene(scene);
         	  stage.show();
         	 }
+        //Volume Controller
+        public void VolumerSlider(ActionEvent event) throws IOException {
+      	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
+      	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+      	  scene = new Scene(root);
+      	  stage.setScene(scene);
+      	  stage.show();
+      	 }
     
+        
+        
+        
       //Go back buttons for the play screen, upgrades screen, and stats screen.
         public void goBackClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
@@ -102,7 +129,14 @@ public class MyController implements Initializable {
       	  stage.setScene(scene);
       	  stage.show();
       	 }   
-
+        public void SettingsExit(ActionEvent event) throws IOException {
+        	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
+        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        	  scene = new Scene(root);
+        	  stage.setScene(scene);
+        	  stage.show();
+        	 }
+        
 
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {

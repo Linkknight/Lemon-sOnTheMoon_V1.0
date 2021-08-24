@@ -8,26 +8,25 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0">
          <image>
-            <Image url="@../../../../../Downloads/SpaceBackground.png" />
+            <Image url="@assets/SpaceBackground.png" />
          </image>
       </ImageView>
-      <Label layoutX="244.0" layoutY="14.0" prefHeight="64.0" prefWidth="113.0" text="Settings" textFill="#fbff00">
+      <Label layoutX="243.0" layoutY="14.0" prefHeight="64.0" prefWidth="113.0" text="Settings" textFill="#fbff00">
          <font>
             <Font name="Chiller" size="45.0" />
          </font>
       </Label>
-      <Slider layoutX="244.0" layoutY="145.0" prefHeight="14.0" prefWidth="306.0" />
+      <Slider layoutX="140.0" layoutY="148.0" onDragDetected="#VolumeSlider" prefHeight="14.0" prefWidth="306.0" />
       <Label layoutX="61.0" layoutY="144.0" prefHeight="17.0" prefWidth="142.0" text="Volume" textFill="WHITE">
          <font>
             <Font name="Corbel" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="238.0" layoutY="308.0" mnemonicParsing="false" text="Save and Exit">
+      <Button layoutX="238.0" layoutY="308.0" mnemonicParsing="false" onAction="#SettingsExit" text="Save and Exit">
          <font>
             <Font name="Corbel" size="18.0" />
          </font>
