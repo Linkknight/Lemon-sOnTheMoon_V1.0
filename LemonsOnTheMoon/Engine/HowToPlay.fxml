@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.SepiaTone?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
@@ -20,11 +22,13 @@
             <Font name="Chiller" size="48.0" />
          </font>
       </Label>
-      <Label fx:id="howtolbl1" layoutX="4.0" layoutY="59.0" prefHeight="17.0" prefWidth="600.0" text="This is an idle clicker game which means that the player doesn't have to interact 24/7 for the game to progress." />
-      <Label fx:id="howtolbl2" layoutX="19.0" layoutY="84.0" prefHeight="17.0" prefWidth="591.0" text="There are buttons on the side of the screen that allow the player to interact with the game when they want." />
-      <Label fx:id="howtolbl3" layoutX="14.0" layoutY="101.0" prefHeight="17.0" prefWidth="582.0" text="The buttons include an iteract button that speeds up the growth rate of the game only when it is pushed" />
-      <Label fx:id="howtolbl4" layoutX="19.0" layoutY="118.0" prefHeight="25.0" prefWidth="573.0" text="an upgrade button that changes how the game functions includeing speeding up the growth rate" />
-      <Label fx:id="howtolbl5" layoutX="19.0" layoutY="143.0" prefHeight="17.0" prefWidth="519.0" text=" as well as increasing the amount of lemons the player recives.  There is also a save button" />
-      <Label fx:id="howtolbl6" layoutX="19.0" layoutY="167.0" prefHeight="17.0" prefWidth="519.0" text="which allows the player to save the current upgrades and collected lemon count" />
+      <TextArea blendMode="SOFT_LIGHT" editable="false" layoutX="43.0" layoutY="73.0" prefHeight="248.0" prefWidth="516.0" text="This is an idle clicker game which means that the player doesn't have to interact 24/7 for the game to progress.There are buttons on the side of the screen that allow the player to interact with the game when they want.The buttons include an iteract button that speeds up the growth rate of the game only when it is pushedan upgrade button that changes how the game functions includeing speeding up the growth rateas well as increasing the amount of lemons the player recives.  There is also a save buttonwhich allows the player to save the current upgrades and collected lemon count" wrapText="true">
+         <font>
+            <Font name="Corbel Bold" size="15.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </TextArea>
    </children>
 </Pane>
