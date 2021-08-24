@@ -10,12 +10,12 @@
    <children>
       <ImageView fitHeight="854.0" fitWidth="906.0" layoutX="-2.0" layoutY="-120.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@SpaceBackground.png" />
+            <Image url="@assets/SpaceBackground.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="651.0" fitWidth="665.0" layoutX="487.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Moon.png" />
+            <Image url="@assets/Moon.png" />
          </image>
       </ImageView>
       <Button fx:id="upgrade" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#upgradeClick" prefHeight="42.0" prefWidth="149.0" text="Upgrade" />
