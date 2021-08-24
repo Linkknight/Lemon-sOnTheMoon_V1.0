@@ -15,18 +15,33 @@ import java.util.TimerTask;
 	
 	
 public class idleTimer {
+	private long second;
+	private int lemonCounter;
+	private Timer timer;
 	
-	public static void main(String[] args) {
-		Timer timer = new Timer();
-		long start = 30000l;
-		long time = 60000l;
-		TimerTask task = new TimerTask(){
-		public void run() {
-			System.out.println("IT WORKS");
-			//comment
-		}
-		
-	};	
-		timer.scheduleAtFixedRate(task,start,time);
-		}
+	public void main(){
+        this.second = 60;
+        this.lemonCounter = 0;
+        timer = new Timer();
+        TimerTask task = new TimerTask(){
+            public void run() {
+                second--;
+               
+                if (second >40){
+                    System.out.println("Phase One");
+                }else if(second < 40 && second >20){
+                    System.out.println("Phase Two");
+                }else if(second < 20 && second > 1){
+                   System.out.println("Phase Three");
+                }if(second <=0){
+                    second = 60;
+                    lemonCounter += 3;
+                    System.out.println("Lemons: " + lemonCounter);
+                }
+            }
+
+
+            };
+            timer.scheduleAtFixedRate(task,30l,second);
+        };
 	}
