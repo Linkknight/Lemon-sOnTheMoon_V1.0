@@ -77,6 +77,10 @@ public class MyController implements Initializable {
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
+<<<<<<< HEAD
+=======
+      	  idleTimer.main(null);
+>>>>>>> parent of 595da88 (Whitespace Cleanup)
       	 }
         
         //switch scene to status
@@ -111,6 +115,7 @@ public class MyController implements Initializable {
       	  stage.show();
       	 }
         
+<<<<<<< HEAD
         
         static String url = "jdbc\\:mysql://localhost:3306/"
                 + "people?allowPublicKeyRetrieval=true&useSSL=false";
@@ -143,6 +148,15 @@ public class MyController implements Initializable {
      		insertInformation(firstNames,lastName,email,userName,userPassword);
         }
         
+=======
+        public void goBackHomeClick(ActionEvent event) throws IOException {
+      	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+      	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+      	  scene = new Scene(root);
+      	  stage.setScene(scene);
+      	  stage.show();
+      	 }   
+>>>>>>> parent of 595da88 (Whitespace Cleanup)
 
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {
