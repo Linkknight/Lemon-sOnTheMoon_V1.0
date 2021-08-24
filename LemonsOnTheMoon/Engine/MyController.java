@@ -43,49 +43,33 @@ public class MyController implements Initializable {
 
          @FXML
         private TextField txt;
-
         @FXML
-        private Button btn;
-        
+        private Button btn;        
         @FXML
-        private Pane rootpane;
-        
-        
+        private Pane rootpane;              
         @FXML
-        private ImageView theMoon;
-        
+        private ImageView theMoon;        
         @FXML
-        private TextField txtfirstName;
-        
+        private TextField txtfirstName;        
         @FXML
-        private TextField txtlastName;
-        
+        private TextField txtlastName;        
         @FXML
-        private TextField txtemail;
-        
+        private TextField txtemail;        
         @FXML
-        private TextField txtuserName;
-        
+        private TextField txtuserName;        
         @FXML
         private TextField txtuserPassword;
        
         
-        //switch scene to play
+        //Switch between the game pages.
+        //Switch to the play screen.
         public void playClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
-<<<<<<< HEAD
-=======
-      	  idleTimer.main(null);
-<<<<<<< HEAD
->>>>>>> parent of 595da88 (Whitespace Cleanup)
-=======
->>>>>>> parent of 595da88 (Whitespace Cleanup)
-      	 }
-        
+      	 }        
         //switch scene to status
         public void statusClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Status.fxml"));
@@ -93,13 +77,7 @@ public class MyController implements Initializable {
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
-      	  
-      	 
-      	//currentTime = idle.time;
-        //currentTime - intClickCounter = newTime;
-      	 }
-        
-        
+      	 }       
         //switch scene to upgrade
         public void upgradeClick(ActionEvent event) throws IOException {
         	  root = FXMLLoader.load(getClass().getResource("Upgrade.fxml"));
@@ -109,52 +87,14 @@ public class MyController implements Initializable {
         	  stage.show();
         	 }
     
-      //Go back to play scene
+      //Go back buttons for the play screen, upgrades screen, and stats screen.
         public void goBackClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
-      	 }
-        
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-        static String url = "jdbc\\:mysql://localhost:3306/"
-                + "people?allowPublicKeyRetrieval=true&useSSL=false";
-        static String user = "root";
-        static String password = "8162001";
-        
-        public  void insertInformation(String firstName, String lastName, String email, String userName, String userPassword) {
-        	        	
-            String sql = "INSERT INTO People(firstName, lastName, email, username, userpassword) Values"
-            		+ "('" + firstName + "','" + lastName + "','" + email + "','" + userName + "','" + userPassword + "')";
-                    
-            try {
-                Connection con = DriverManager.getConnection(url, user, password);
-                Statement st = con.createStatement();
-                st.executeUpdate(sql);
-            
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-        }
-        
-        public void saveClick(ActionEvent event) {
-        	 String firstNames = txtfirstName.getText();
-      	   String lastName = txtlastName.getText();
-      	   String email = txtemail.getText();
-      	   String userName = txtuserName.getText();
-      	   String userPassword = txtuserPassword.getText();
-     	   
-     		insertInformation(firstNames,lastName,email,userName,userPassword);
-        }
-        
-=======
-=======
->>>>>>> parent of 595da88 (Whitespace Cleanup)
+      	 }  
         public void goBackHomeClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -162,15 +102,13 @@ public class MyController implements Initializable {
       	  stage.setScene(scene);
       	  stage.show();
       	 }   
->>>>>>> parent of 595da88 (Whitespace Cleanup)
+
 
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {
                    
-        }       
-           
-            
         }
+}
 
 
 
