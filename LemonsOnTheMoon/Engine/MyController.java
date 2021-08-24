@@ -63,7 +63,7 @@ public class MyController implements Initializable {
         
         //Switch between the game pages.
         //Switch to the play screen.
-        public void playClick(ActionEvent event) throws IOException {
+        public void goToPlay(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
       	  scene = new Scene(root);
@@ -71,7 +71,7 @@ public class MyController implements Initializable {
       	  stage.show();
       	 }      
         //Switch scene to how to play screen.
-        public void HowToPlay(ActionEvent event) throws IOException {
+        public void goToHowToPlay(ActionEvent event) throws IOException {
         	  root = FXMLLoader.load(getClass().getResource("HowToPlay.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         	  scene = new Scene(root);
@@ -79,7 +79,7 @@ public class MyController implements Initializable {
         	  stage.show();
         	 }
         //switch scene to status
-        public void statusClick(ActionEvent event) throws IOException {
+        public void goToStatus(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Status.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
       	  scene = new Scene(root);
@@ -87,7 +87,7 @@ public class MyController implements Initializable {
       	  stage.show();
       	 }       
         //Switch to settings.
-        public void Settings(ActionEvent event) throws IOException {
+        public void goToSettings(ActionEvent event) throws IOException {
         	  root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         	  scene = new Scene(root);
@@ -95,13 +95,14 @@ public class MyController implements Initializable {
         	  stage.show();
         	 }
         //switch scene to upgrade
-        public void upgradeClick(ActionEvent event) throws IOException {
+        public void goToUpgrade(ActionEvent event) throws IOException {
         	  root = FXMLLoader.load(getClass().getResource("Upgrade.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         	  scene = new Scene(root);
         	  stage.setScene(scene);
         	  stage.show();
         	 }
+<<<<<<< Updated upstream
         //Volume Controller
         public void VolumeSlider(ActionEvent event) throws IOException {
 //      	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
@@ -111,39 +112,25 @@ public class MyController implements Initializable {
 //      	  stage.show();
       	 }
     
+=======
+>>>>>>> Stashed changes
         
-        
-        
-      //Go back buttons for the play screen, upgrades screen, and stats screen.
-        public void goBackClick(ActionEvent event) throws IOException {
-      	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
-      	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-      	  scene = new Scene(root);
-      	  stage.setScene(scene);
-      	  stage.show();
-      	 }  
-        public void goBackHomeClick(ActionEvent event) throws IOException {
-      	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
-      	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-      	  scene = new Scene(root);
-      	  stage.setScene(scene);
-      	  stage.show();
-      	 }   
-        public void SettingsExit(ActionEvent event) throws IOException {
-        	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
+        public void goToHome(ActionEvent event) throws IOException {
+        	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         	  scene = new Scene(root);
         	  stage.setScene(scene);
         	  stage.show();
-        	 }
-        
-
+        	 } 
+    
+      //Volume Controller
+        public void VolumerSlider(ActionEvent event) throws IOException {
+      	  
+      	 }
+       
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {
                    
         }
 }
-
-
-
  
