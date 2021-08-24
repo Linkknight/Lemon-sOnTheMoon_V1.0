@@ -48,6 +48,12 @@ public class MyController implements Initializable {
         private Button btn;
         
         @FXML
+        private Button btnHow;
+        
+        @FXML
+        private Button Settings;
+        
+        @FXML
         private Pane rootpane;
         
         
@@ -142,6 +148,23 @@ public class MyController implements Initializable {
      	   
      		insertInformation(firstNames,lastName,email,userName,userPassword);
         }
+        
+        public void goHowToPlay(ActionEvent event) throws IOException {
+        	  root = FXMLLoader.load(getClass().getResource("HowToPlay.fxml"));
+        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        	  scene = new Scene(root);
+        	  stage.setScene(scene);
+        	  stage.show();
+        	 }
+          
+        public void goSettings(ActionEvent event) throws IOException {
+      	  root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
+      	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+      	  scene = new Scene(root);
+      	  stage.setScene(scene);
+      	  stage.show();
+      	 }
+        
         
 
         @Override
