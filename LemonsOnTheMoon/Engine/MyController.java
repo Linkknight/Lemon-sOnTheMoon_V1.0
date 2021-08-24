@@ -102,18 +102,6 @@ public class MyController implements Initializable {
         	  stage.setScene(scene);
         	  stage.show();
         	 }
-<<<<<<< Updated upstream
-        //Volume Controller
-        public void VolumeSlider(ActionEvent event) throws IOException {
-//      	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
-//      	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-//      	  scene = new Scene(root);
-//      	  stage.setScene(scene);
-//      	  stage.show();
-      	 }
-    
-=======
->>>>>>> Stashed changes
         
         public void goToHome(ActionEvent event) throws IOException {
         	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
@@ -124,7 +112,7 @@ public class MyController implements Initializable {
         	 } 
     
       //Volume Controller
-        public void VolumerSlider(ActionEvent event) throws IOException {
+        public void VolumeSlider(ActionEvent event) throws IOException {
       	  
       	 }
        
