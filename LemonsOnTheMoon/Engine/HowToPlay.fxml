@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane fx:id="howtoPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="howToPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button fx:id="returnbtn" layoutX="274.0" layoutY="336.0" mnemonicParsing="false" text="Return" />
       <Label fx:id="howtolbl" layoutX="169.0" text="How To Play">
@@ -14,7 +13,7 @@
             <Font name="Comic Sans MS" size="48.0" />
          </font>
       </Label>
-      <Label fx:id="howtolbl1" layoutX="14.0" layoutY="67.0" prefHeight="17.0" prefWidth="600.0" text="This is an idle clicker game which means that the player doesn't have to interact 24/7 for the game to progress." />
+      <Label fx:id="howtolbl1" layoutX="4.0" layoutY="59.0" prefHeight="17.0" prefWidth="600.0" text="This is an idle clicker game which means that the player doesn't have to interact 24/7 for the game to progress." />
       <Label fx:id="howtolbl2" layoutX="19.0" layoutY="84.0" prefHeight="17.0" prefWidth="591.0" text="There are buttons on the side of the screen that allow the player to interact with the game when they want." />
       <Label fx:id="howtolbl3" layoutX="14.0" layoutY="101.0" prefHeight="17.0" prefWidth="582.0" text="The buttons include an iteract button that speeds up the growth rate of the game only when it is pushed" />
       <Label fx:id="howtolbl4" layoutX="19.0" layoutY="118.0" prefHeight="25.0" prefWidth="573.0" text="an upgrade button that changes how the game functions includeing speeding up the growth rate" />
