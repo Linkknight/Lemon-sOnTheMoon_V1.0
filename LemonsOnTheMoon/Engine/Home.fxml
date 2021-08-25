@@ -3,19 +3,20 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.SepiaTone?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
    <children>
-      <ImageView fitHeight="728.0" fitWidth="752.0" layoutX="-6.0" layoutY="-183.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="824.0" fitWidth="789.0" layoutX="-6.0" layoutY="-183.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@SpaceBackground.png" />
+            <Image url="@assets/SpaceBackground.png" />
          </image>
       </ImageView>
-      <Button fx:id="startButton" layoutX="24.0" layoutY="142.0" mnemonicParsing="false" onAction="#playClick" prefHeight="34.0" prefWidth="184.0" text="Play">
+      <Button fx:id="startButton" layoutX="24.0" layoutY="142.0" mnemonicParsing="false" onAction="#goToPlay" prefHeight="34.0" prefWidth="184.0" text="Play">
          <font>
             <Font name="Corbel Bold" size="21.0" />
          </font></Button>
@@ -24,20 +25,34 @@
             <Font name="Chiller" size="45.0" />
          </font>
       </Label>
+
       <Button fx:id="btnHow" layoutX="24.0" layoutY="207.0" mnemonicParsing="false" onAction="#goHowToPlay" prefHeight="34.0" prefWidth="184.0" text="How To Play">
+
+      <Button layoutX="24.0" layoutY="207.0" mnemonicParsing="false" onAction="#goToHowToPlay" prefHeight="34.0" prefWidth="184.0" text="How To Play">
+
          <font>
             <Font name="Corbel Bold" size="21.0" />
          </font>
       </Button>
+
       <Button fx:id="btnSettings" layoutX="24.0" layoutY="272.0" mnemonicParsing="false" onAction="#goSettings" prefHeight="40.0" prefWidth="184.0" text="Settings">
+
+      <Button layoutX="24.0" layoutY="272.0" mnemonicParsing="false" onAction="#goToSettings" prefHeight="40.0" prefWidth="184.0" text="Settings">
+
          <font>
             <Font name="Corbel Bold" size="21.0" />
          </font>
       </Button>
-      <TextArea layoutX="19.0" layoutY="421.0" prefHeight="64.0" prefWidth="386.0" text="Made in collaboration with: Brady Blake, Zach Sylvester, Alexis Temple, James Watson, and Zhenxing Zheng.     Neumont - Intro to Project Systems." wrapText="true" />
-      <ImageView fitHeight="773.0" fitWidth="552.0" layoutX="405.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+      <TextArea blendMode="SOFT_LIGHT" editable="false" layoutX="19.0" layoutY="492.0" prefHeight="98.0" prefWidth="479.0" text="Made in collaboration with: Brady Blake, Zach Sylvester, Alexis Temple, James Watson, and Zhenxing Zheng.     Neumont - Intro to Project Systems." wrapText="true">
+         <effect>
+            <SepiaTone />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+      <ImageView fitHeight="644.0" fitWidth="615.0" layoutX="451.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Moon.png" />
+            <Image url="@assets/Moon.png" />
          </image>
       </ImageView>
    </children>

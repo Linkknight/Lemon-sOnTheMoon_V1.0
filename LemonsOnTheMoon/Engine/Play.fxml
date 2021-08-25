@@ -5,23 +5,36 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
    <children>
       <ImageView fitHeight="854.0" fitWidth="906.0" layoutX="-2.0" layoutY="-120.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@SpaceBackground.png" />
+            <Image url="@assets/SpaceBackground.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="651.0" fitWidth="665.0" layoutX="487.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="623.0" fitWidth="609.0" layoutX="412.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Moon.png" />
+            <Image url="@assets/Moon.png" />
          </image>
       </ImageView>
-      <Button fx:id="upgrade" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#upgradeClick" prefHeight="42.0" prefWidth="149.0" text="Upgrade" />
-      <Button fx:id="btn" layoutX="76.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" scaleX="5.0" scaleY="3.0" style="-fx-background-image: .button {  background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;};" />
-      <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#statusClick" prefHeight="42.0" prefWidth="149.0" text="Stats" />
-      <TextField alignment="CENTER" layoutX="338.0" layoutY="14.0" promptText="CurrencyAmount" />
-      <Button layoutX="-32.0" layoutY="609.0" mnemonicParsing="false" onAction="#goBackHomeClick" prefHeight="42.0" prefWidth="149.0" text="Home" />
+      <Button fx:id="upgrade" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#goToUpgrade" prefHeight="42.0" prefWidth="149.0" text="Upgrade">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="btn" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" style="-fx-background-image: .button {  background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;};" />
+      <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#goToStatus" prefHeight="42.0" prefWidth="149.0" text="Status">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <TextField alignment="CENTER" editable="false" layoutX="313.0" layoutY="21.0" promptText="CurrencyAmount">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button layoutX="14.0" layoutY="544.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="42.0" prefWidth="73.0" text="Home">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
    </children>
 </Pane>
