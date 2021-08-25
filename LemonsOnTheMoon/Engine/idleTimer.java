@@ -42,6 +42,6 @@ public class idleTimer {
 
 
             };
-            timer.scheduleAtFixedRate(task,30l,second);
+            timer.scheduleAtFixedRate(task,10000,second);
         };
 	}

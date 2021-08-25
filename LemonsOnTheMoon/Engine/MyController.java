@@ -60,6 +60,9 @@ public class MyController implements Initializable {
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
+      	  
+      	  idleTimer idleTimer = new idleTimer();
+      	  idleTimer.main();
       	 }      
         //Switch scene to How To Play
         public void goToHowToPlay(ActionEvent event) throws IOException {
