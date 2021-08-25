@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.URL;
@@ -16,6 +17,7 @@ import java.sql.Statement;
 import java.util.ResourceBundle;
 import java.util.Timer;
 import java.util.TimerTask;
+
 import javafx.scene.control.Alert;
 import javafx.stage.Window;
 import javafx.fxml.Initializable;
@@ -23,9 +25,12 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+
+
 
 public class MyController implements Initializable {
 	
@@ -33,10 +38,15 @@ public class MyController implements Initializable {
 	 private Scene scene;
 	 private Parent root;
 	 
-        @FXML
+	 
+	
+
+         @FXML
         private TextField txt;
+
         @FXML
-        private Button btn;        
+        private Button btn;
+        
         @FXML
         private Button btnHow;
         
@@ -45,75 +55,67 @@ public class MyController implements Initializable {
         
         @FXML
         private Pane rootpane;
-
+        
+        
         @FXML
-        private ImageView theMoon;        
+        private ImageView theMoon;
+        
         @FXML
-        private TextField txtfirstName;        
+        private TextField txtfirstName;
+        
         @FXML
-        private TextField txtlastName;        
+        private TextField txtlastName;
+        
         @FXML
-        private TextField txtemail;        
+        private TextField txtemail;
+        
         @FXML
-        private TextField txtuserName;        
+        private TextField txtuserName;
+        
         @FXML
         private TextField txtuserPassword;
        
-        //Switch between the game pages.
-        //Switch to Play
-        public void goToPlay(ActionEvent event) throws IOException {
+        
+        //switch scene to play
+        public void playClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
-      	 }      
-        //Switch scene to How To Play
-        public void goToHowToPlay(ActionEvent event) throws IOException {
-        	  root = FXMLLoader.load(getClass().getResource("HowToPlay.fxml"));
-        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        	  scene = new Scene(root);
-        	  stage.setScene(scene);
-        	  stage.show();
-        	 }
-        //switch scene to Status
-        public void goToStatus(ActionEvent event) throws IOException {
+      	 }
+        
+        //switch scene to status
+        public void statusClick(ActionEvent event) throws IOException {
       	  root = FXMLLoader.load(getClass().getResource("Status.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
       	  scene = new Scene(root);
       	  stage.setScene(scene);
       	  stage.show();
-      	 }       
-        //Switch to Settings.
-        public void goToSettings(ActionEvent event) throws IOException {
-        	  root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
-        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        	  scene = new Scene(root);
-        	  stage.setScene(scene);
-        	  stage.show();
-        	 }
-        //switch scene to Upgrade
-        public void goToUpgrade(ActionEvent event) throws IOException {
+      	  
+      	 
+      	//currentTime = idle.time;
+        //currentTime - intClickCounter = newTime;
+      	 }
+        
+        
+        //switch scene to upgrade
+        public void upgradeClick(ActionEvent event) throws IOException {
         	  root = FXMLLoader.load(getClass().getResource("Upgrade.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         	  scene = new Scene(root);
         	  stage.setScene(scene);
         	  stage.show();
         	 }
-        //switch scene to Home
-        public void goToHome(ActionEvent event) throws IOException {
-        	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
-        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        	  scene = new Scene(root);
-        	  stage.setScene(scene);
-        	  stage.show();
-        	 } 
     
-      //Volume Controller
-        public void VolumeSlider(ActionEvent event) throws IOException {
-      	  
+      //Go back to play scene
+        public void goBackClick(ActionEvent event) throws IOException {
+      	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
+      	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+      	  scene = new Scene(root);
+      	  stage.setScene(scene);
+      	  stage.show();
       	 }
-
         
         
         static String url = "jdbc\\:mysql://localhost:3306/"
@@ -164,10 +166,15 @@ public class MyController implements Initializable {
       	 }
         
         
+
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {
                    
+        }       
+           
+            
         }
-        
-}
+
+
+
  
