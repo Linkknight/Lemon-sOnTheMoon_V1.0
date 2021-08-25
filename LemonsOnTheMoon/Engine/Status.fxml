@@ -13,6 +13,7 @@
             <Font size="27.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Button layoutX="200.0" layoutY="375.0" mnemonicParsing="false" onAction="#goBackClick" text="Go back" />
       <Button layoutX="442.0" layoutY="299.0" mnemonicParsing="false" onAction="#saveClick" text="Save to database" />
       <TextField fx:id="txtfirstName" layoutX="279.0" layoutY="160.0" promptText="First Name" />
@@ -20,5 +21,25 @@
       <TextField fx:id="txtemail" layoutX="275.0" layoutY="248.0" promptText="Email" />
       <TextField fx:id="txtuserName" layoutX="279.0" layoutY="286.0" promptText="User Name" />
       <TextField fx:id="txtuserPassword" layoutX="284.0" layoutY="324.0" promptText="User Password" />
+=======
+      <Button layoutX="160.0" layoutY="375.0" mnemonicParsing="false" onAction="#goToPlay" text="Back To Game">
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="469.0" layoutY="375.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Save Game">
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font></Button>
+      <Label layoutX="201.0" layoutY="229.0" text="Lemons per minute" textFill="YELLOW">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="201.0" layoutY="179.0" text="Lemons per Tree" textFill="#f2ff00">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField layoutX="375.0" layoutY="179.0" promptText="LemsPerTree" />
+      <TextField layoutX="375.0" layoutY="229.0" promptText="LemsPerMin" />
+>>>>>>> parent of a3ecb15 (changed editable settings)
    </children>
 </AnchorPane>
