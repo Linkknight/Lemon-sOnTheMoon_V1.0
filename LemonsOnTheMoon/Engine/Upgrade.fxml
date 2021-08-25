@@ -7,18 +7,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
    <children>
-      <ImageView fitHeight="723.0" fitWidth="723.0" layoutY="-197.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="829.0" fitWidth="797.0" layoutY="-197.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/SpaceBackground.png" />
          </image>
       </ImageView>
-      <Label layoutX="296.0" layoutY="-7.0" text="Upgrades" textFill="#fffa00">
+      <Label layoutX="336.0" layoutY="30.0" text="Upgrades" textFill="#fffa00">
          <font>
             <Font name="Chiller" size="48.0" />
          </font>
       </Label>
-      <Button layoutX="328.0" layoutY="384.0" mnemonicParsing="false" onAction="#goToPlay" text="Go back" />
+      <Button layoutX="360.0" layoutY="470.0" mnemonicParsing="false" onAction="#goToPlay" text="Go back">
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font></Button>
    </children>
 </AnchorPane>

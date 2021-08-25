@@ -3,31 +3,34 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="howToPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+<Pane fx:id="howToPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
    <children>
-      <ImageView fitHeight="617.0" fitWidth="907.0" layoutX="-8.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="766.0" fitWidth="814.0" layoutX="-8.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/SpaceBackground.png" />
          </image>
       </ImageView>
-      <Button fx:id="returnbtn" layoutX="274.0" layoutY="336.0" mnemonicParsing="false" onAction="#goToHome" text="Return" />
-      <Label fx:id="howtolbl" layoutX="219.0" prefHeight="73.0" prefWidth="173.0" text="How To Play" textFill="#e8e84d">
+      <Button fx:id="returnbtn" layoutX="339.0" layoutY="500.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="37.0" prefWidth="72.0" text="Return">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label fx:id="howtolbl" layoutX="289.0" layoutY="44.0" prefHeight="73.0" prefWidth="173.0" text="How To Play" textFill="#e8e84d">
          <font>
             <Font name="Chiller" size="48.0" />
          </font>
       </Label>
-      <TextArea blendMode="SOFT_LIGHT" editable="false" layoutX="43.0" layoutY="73.0" prefHeight="248.0" prefWidth="516.0" text="This is an idle clicker game which means that the player doesn't have to interact 24/7 for the game to progress.There are buttons on the side of the screen that allow the player to interact with the game when they want.The buttons include an iteract button that speeds up the growth rate of the game only when it is pushedan upgrade button that changes how the game functions includeing speeding up the growth rateas well as increasing the amount of lemons the player recives.  There is also a save buttonwhich allows the player to save the current upgrades and collected lemon count" wrapText="true">
+      <TextArea blendMode="SOFT_LIGHT" editable="false" layoutX="65.0" layoutY="127.0" prefHeight="347.0" prefWidth="620.0" text="This is an idle clicker game which means that the player doesn't have to interact 24/7 for the game to progress.There are buttons on the side of the screen that allow the player to interact with the game when they want.The buttons include an iteract button that speeds up the growth rate of the game only when it is pushedan upgrade button that changes how the game functions including speeding up the growth rateas well as increasing the amount of lemons the player recives.  There is also a save buttonwhich allows the player to save the current upgrades and collected lemon count" wrapText="true">
          <font>
-            <Font name="Corbel Bold" size="15.0" />
+            <Font name="Corbel Bold" size="22.0" />
          </font>
          <effect>
-            <SepiaTone />
+            <ColorAdjust />
          </effect>
       </TextArea>
    </children>
