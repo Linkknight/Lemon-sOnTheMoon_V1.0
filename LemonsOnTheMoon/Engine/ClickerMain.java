@@ -36,11 +36,12 @@ public class ClickerMain extends Application {
     
     
     MediaPlayer mediaPlayer;
-	public void music() {
+	
+    public void music() {
 		String s = "test.mp3";
 		Media h = new Media(Paths.get(s).toUri().toString());
 		mediaPlayer = new MediaPlayer(h);
 		mediaPlayer.play();
 		
-}
+	}
 }
