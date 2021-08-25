@@ -51,6 +51,11 @@ public class MyController implements Initializable {
         private TextField txtuserName;        
         @FXML
         private TextField txtuserPassword;
+        @FXML
+        private TextField lemonPerTree;
+        @FXML
+        private TextField lemonPerMinute;
+       
        
         //Switch between the game pages.
         //Switch to Play
@@ -104,6 +109,16 @@ public class MyController implements Initializable {
         	  stage.setScene(scene);
         	  stage.show();
         	 } 
+        //save the game 
+        public void saveGame(ActionEvent event) throws IOException {
+        	  clickerDatabase db = new clickerDatabase();
+        	  String strLemonPerTree = lemonPerTree.getText();
+        	  String strLemonPerMinute = lemonPerMinute.getText();
+        	  
+        	  lemonPerMinute.setText("lol");
+        	  
+        	  clickerDatabase.insertUserInformation(strLemonPerTree,strLemonPerMinute);
+     	 }
     
       //Volume Controller
         public void VolumeSlider(ActionEvent event) throws IOException {

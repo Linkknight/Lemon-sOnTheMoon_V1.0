@@ -7,11 +7,12 @@ public class clickerDatabase {
 
 	static String url = "jdbc:mysql://localhost:3306/" + "clickerDatabase?allowPublicKeyRetrieval=true&useSSL=false";
     static String user = "root";
-    static String password = "test";
+    static String password = "8162001";
     
-    public static void createClickerDatabase() {
+    public static void insertUserInformation(String strLemonPerTree, String strLemonPerMinute) {
     	
-    	String sql = "drop database if exists clickerData; create database clickerData; go";
+    	String sql = "INSERT INTO Player(LemonPerTree, LemonPerMinute) Values"
+        		+ "('" + strLemonPerTree + "','" + strLemonPerMinute + "')";;
     	
     	try {
             Connection con = DriverManager.getConnection(url, user, password);
@@ -23,17 +24,6 @@ public class clickerDatabase {
     }
     
     
-    public static void updateValue() {
-
-        int intRows;
-        String sql = "use clickerData UPDATE ";
-        try {
-            Connection con = DriverManager.getConnection(url, user, password);
-            PreparedStatement pst = con.prepareStatement(sql);
-            intRows = pst.executeUpdate(sql);
-            System.out.println(intRows);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-     }
+  
+     
 }
