@@ -36,7 +36,7 @@
          <font>
             <Font size="16.0" />
          </font></Label>
-      <TextField layoutX="375.0" layoutY="179.0" promptText="LemsPerTree" />
-      <TextField layoutX="375.0" layoutY="229.0" promptText="LemsPerMin" />
+      <TextField editable="false" layoutX="375.0" layoutY="179.0" promptText="LemsPerTree" />
+      <TextField editable="false" layoutX="375.0" layoutY="229.0" promptText="LemsPerMin" />
    </children>
 </AnchorPane>
