@@ -33,6 +33,8 @@ public class MyController implements Initializable {
 	 private Scene scene;
 	 private Parent root;
 	 
+	 ClickerMain cm = new ClickerMain();
+	 
         @FXML
         private TextField txt;
         @FXML
@@ -60,6 +62,7 @@ public class MyController implements Initializable {
         //Switch between the game pages.
         //Switch to Play
         public void goToPlay(ActionEvent event) throws IOException {
+        	cm.clickSFX();
       	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
       	  scene = new Scene(root);
@@ -71,6 +74,7 @@ public class MyController implements Initializable {
       	 }      
         //Switch scene to How To Play
         public void goToHowToPlay(ActionEvent event) throws IOException {
+        	cm.clickSFX();
         	  root = FXMLLoader.load(getClass().getResource("HowToPlay.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         	  scene = new Scene(root);
@@ -79,6 +83,7 @@ public class MyController implements Initializable {
         	 }
         //switch scene to Status
         public void goToStatus(ActionEvent event) throws IOException {
+        	cm.clickSFX();
       	  root = FXMLLoader.load(getClass().getResource("Status.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
       	  scene = new Scene(root);
@@ -87,6 +92,7 @@ public class MyController implements Initializable {
       	 }       
         //Switch to Settings.
         public void goToSettings(ActionEvent event) throws IOException {
+        	cm.clickSFX();
         	  root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         	  scene = new Scene(root);
@@ -95,6 +101,7 @@ public class MyController implements Initializable {
         	 }
         //switch scene to Upgrade
         public void goToUpgrade(ActionEvent event) throws IOException {
+        	cm.clickSFX();
         	  root = FXMLLoader.load(getClass().getResource("Upgrade.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         	  scene = new Scene(root);
@@ -103,6 +110,7 @@ public class MyController implements Initializable {
         	 }
         //switch scene to Home
         public void goToHome(ActionEvent event) throws IOException {
+        	cm.clickSFX();
         	  root = FXMLLoader.load(getClass().getResource("Home.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         	  scene = new Scene(root);
@@ -111,6 +119,7 @@ public class MyController implements Initializable {
         	 } 
         //save the game 
         public void saveGame(ActionEvent event) throws IOException {
+        	cm.clickSFX();
         	  clickerDatabase db = new clickerDatabase();
         	  String strLemonPerTree = lemonPerTree.getText();
         	  String strLemonPerMinute = lemonPerMinute.getText();

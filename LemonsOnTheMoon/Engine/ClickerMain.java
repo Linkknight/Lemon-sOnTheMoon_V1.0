@@ -44,4 +44,13 @@ public class ClickerMain extends Application {
 		mediaPlayer.play();
 		
 	}
+    
+    public void clickSFX() {
+    	
+    	String s = "click.mp3";
+		Media h = new Media(Paths.get(s).toUri().toString());
+		mediaPlayer = new MediaPlayer(h);
+		mediaPlayer.play();
+    	
+    }
 }
