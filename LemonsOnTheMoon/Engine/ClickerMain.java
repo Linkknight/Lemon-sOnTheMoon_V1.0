@@ -19,6 +19,8 @@ import java.io.File;
 
 
 public class ClickerMain extends Application {
+	
+	MyController mc = new MyController();
 
     public static void main(String[] args) {
        launch(args);
@@ -27,30 +29,11 @@ public class ClickerMain extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {    
-    	music();
+    	mc.music();
         Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("Home.fxml"));
         stage.setScene(new Scene(mainPane));
         stage.show();
         
     }
     
-    
-    MediaPlayer mediaPlayer;
-	
-    public void music() {
-		String s = "test.mp3";
-		Media h = new Media(Paths.get(s).toUri().toString());
-		mediaPlayer = new MediaPlayer(h);
-		mediaPlayer.play();
-		
-	}
-    
-    public void clickSFX() {
-    	
-    	String s = "click.mp3";
-		Media h = new Media(Paths.get(s).toUri().toString());
-		mediaPlayer = new MediaPlayer(h);
-		mediaPlayer.play();
-    	
-    }
 }
