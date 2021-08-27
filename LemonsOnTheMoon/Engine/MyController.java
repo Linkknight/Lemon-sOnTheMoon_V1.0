@@ -136,11 +136,15 @@ public class MyController implements Initializable {
         	  stage.setScene(scene);
         	  stage.show();
         	 } 
+        
+        
         //save the game 
-        public void saveGame(ActionEvent event) throws IOException {
-        	clickSFX();
+        public void saveGame() {
+        	
         	  String strLemonPerTree = lemonPerTree.getText();
         	  String strLemonPerMinute = lemonPerMinute.getText();
+        	  
+        	  System.out.println("Lemon Per Tree: " + strLemonPerTree + " \n Lemon Per Minute: " + strLemonPerMinute);
         	          	  
         	  clickerDatabase.insertUserInformation(strLemonPerTree,strLemonPerMinute);
      	 }

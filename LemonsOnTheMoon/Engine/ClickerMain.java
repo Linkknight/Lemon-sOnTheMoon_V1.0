@@ -15,12 +15,19 @@ import javafx.stage.Stage;
 import javafx.stage.Screen;
 import java.net.URL;
 import java.nio.file.Paths;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.io.File;
+
 
 
 public class ClickerMain extends Application {
 	
-	MyController mc = new MyController();
+	
+	public static ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+		
+	MyController MyController = new MyController();
 
     public static void main(String[] args) {
        launch(args);
@@ -29,7 +36,10 @@ public class ClickerMain extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {    
-    	mc.music();
+    	
+    	executorService.scheduleWithFixedDelay(() -> MyController.saveGame(), 0, 1, TimeUnit.MINUTES);
+    	
+    	MyController.music();
         Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("Home.fxml"));
         stage.setScene(new Scene(mainPane));
         stage.show();
