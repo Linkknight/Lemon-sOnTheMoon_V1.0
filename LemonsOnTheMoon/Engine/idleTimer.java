@@ -14,12 +14,12 @@ import java.util.TimerTask;
 	
 	
 public class idleTimer {
-	private long second;
-	private int lemonCounter;
+	static long second = 60;
+	int lemonCounter;
 	private Timer timer;
 	
 	public void main(){
-        this.second = 60;
+//        this.second = 60;
         this.lemonCounter = 0;
         timer = new Timer();
         TimerTask task = new TimerTask(){
@@ -41,6 +41,6 @@ public class idleTimer {
 
 
             };
-            timer.scheduleAtFixedRate(task,10000,second);
+            timer.scheduleAtFixedRate(task,0,1000);
         };
 	}

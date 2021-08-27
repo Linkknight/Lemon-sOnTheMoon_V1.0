@@ -75,8 +75,18 @@ public class MyController implements Initializable {
       	  idleTimer idleTimer = new idleTimer();
       	  idleTimer.main();
       	  
-      	  
-      	 }      
+      	  CurrencyUpdater.setText(Integer.valueOf(idleTimer.lemonCounter).toString());      	  
+      	 }
+        //Decreases the time every 10 seconds when the button is pressed.
+        public void DecreaseTime(ActionEvent event) throws IOException {
+        	clickSFX();
+        	  try {
+				idleTimer.second-=10;
+				System.out.println(idleTimer.second);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+        	 }
         //Switch scene to How To Play
         public void goToHowToPlay(ActionEvent event) throws IOException {
         	clickSFX();
