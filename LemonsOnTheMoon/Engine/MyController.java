@@ -53,13 +53,11 @@ public class MyController implements Initializable {
         @FXML
         private Slider slider;
         @FXML
-        private TextField txtuserName;        
-        @FXML
-        private TextField txtuserPassword;
-        @FXML
         private TextField lemonPerTree;
         @FXML
         private TextField lemonPerMinute;
+        @FXML
+        private TextField CurrencyUpdater;
         
         MediaPlayer mediaPlayer;
        
@@ -67,7 +65,7 @@ public class MyController implements Initializable {
         //Switch between the game pages.
         //Switch to Play
         public void goToPlay(ActionEvent event) throws IOException {
-        	clickSFX();
+          clickSFX();
       	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
       	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
       	  scene = new Scene(root);
@@ -76,6 +74,8 @@ public class MyController implements Initializable {
       	  
       	  idleTimer idleTimer = new idleTimer();
       	  idleTimer.main();
+      	  
+      	  
       	 }      
         //Switch scene to How To Play
         public void goToHowToPlay(ActionEvent event) throws IOException {
