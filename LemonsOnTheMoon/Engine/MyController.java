@@ -60,6 +60,10 @@ public class MyController implements Initializable {
         private TextField CurrencyUpdater;
         
         MediaPlayer mediaPlayer;
+        
+        //Database Variables
+        public int lemonPerTreeCount;
+        public int lemonPerMinuteCount;
        
        
         //Switch between the game pages.
@@ -170,7 +174,7 @@ public class MyController implements Initializable {
       	  
       	 }
         
-    	
+    	//starts background music
         public void music() {
         	
     		String s = "test.mp3";
@@ -179,7 +183,7 @@ public class MyController implements Initializable {
     		mediaPlayer.play();
     		
     	}
-        
+        //SFX on click
         public void clickSFX() {
         	
         	String s = "click.mp3";
@@ -188,7 +192,7 @@ public class MyController implements Initializable {
     		mediaPlayer.play();
         	
         }
-       
+        
         @Override
         public void initialize(URL arg0, ResourceBundle arg1) {
                    
