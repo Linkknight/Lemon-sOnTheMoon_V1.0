@@ -57,7 +57,7 @@ public class MyController implements Initializable {
         @FXML
         private TextField lemonPerMinute;
         @FXML
-        private TextField CurrencyUpdater;
+        public TextField CurrencyUpdater;
         
         MediaPlayer mediaPlayer;
         
@@ -79,7 +79,7 @@ public class MyController implements Initializable {
       	  idleTimer idleTimer = new idleTimer();
       	  idleTimer.main();
       	  
-      	  CurrencyUpdater.setText(Integer.valueOf(idleTimer.lemonCounter).toString());      	  
+      	 CurrencyUpdater.setText(idleTimer.intAsString);
       	 }
         //Decreases the time every 10 seconds when the button is pressed.
         public void DecreaseTime(ActionEvent event) throws IOException {
@@ -113,15 +113,6 @@ public class MyController implements Initializable {
         public void goToSettings(ActionEvent event) throws IOException {
         	clickSFX();
         	  root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
-        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        	  scene = new Scene(root);
-        	  stage.setScene(scene);
-        	  stage.show();
-        	 }
-        //switch scene to Upgrade
-        public void goToUpgrade(ActionEvent event) throws IOException {
-        	clickSFX();
-        	  root = FXMLLoader.load(getClass().getResource("Upgrade.fxml"));
         	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         	  scene = new Scene(root);
         	  stage.setScene(scene);

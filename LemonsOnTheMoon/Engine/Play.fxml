@@ -19,16 +19,8 @@
             <Image url="@assets/Moon.png" />
          </image>
       </ImageView>
-      <Button fx:id="upgrade" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#goToUpgrade" prefHeight="42.0" prefWidth="149.0" text="Upgrade">
-         <font>
-            <Font size="16.0" />
-         </font></Button>
       <Button fx:id="btn" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" onAction="#DecreaseTime" prefHeight="130.0" prefWidth="130.0" style="-fx-background-image: .button {  background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;};" />
-      <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#goToStatus" prefHeight="42.0" prefWidth="149.0" text="Status">
-         <font>
-            <Font size="16.0" />
-         </font></Button>
-      <TextField fx:id="CurrencyUpdater" alignment="CENTER" editable="false" layoutX="313.0" layoutY="21.0" promptText="CurrencyAmount">
+      <TextField fx:id="CurrencyUpdater" alignment="CENTER" editable="false" layoutX="14.0" layoutY="14.0" promptText="CurrencyAmount">
          <font>
             <Font size="16.0" />
          </font></TextField>

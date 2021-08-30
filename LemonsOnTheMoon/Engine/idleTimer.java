@@ -18,6 +18,8 @@ public class idleTimer {
 	int lemonCounter;
 	private Timer timer;
 	
+	public String intAsString;
+	
 	public void main(){
 //        this.second = 60;
         this.lemonCounter = 0;
@@ -35,6 +37,9 @@ public class idleTimer {
                 }if(second <=0){
                     second = 60;
                     lemonCounter += 3;
+                    
+                    intAsString = Integer.valueOf(lemonCounter).toString();
+                	                	  
                     System.out.println("Lemons: " + lemonCounter);
                 }
             }
