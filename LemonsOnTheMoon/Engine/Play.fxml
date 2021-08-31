@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -14,16 +15,7 @@
             <Image url="@assets/SpaceBackground.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="623.0" fitWidth="609.0" layoutX="412.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@assets/Moon.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="upgrade" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#goToUpgrade" prefHeight="42.0" prefWidth="149.0" text="Upgrade">
-         <font>
-            <Font size="16.0" />
-         </font></Button>
-      <Button fx:id="btn" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" onAction="#DecreaseTime" prefHeight="130.0" prefWidth="130.0" style="-fx-background-image: .button {  background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;};" />
+      <Button fx:id="btn" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" onAction="#startGame" prefHeight="130.0" prefWidth="130.0" style="-fx-background-image: .button {  background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;};" />
       <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#goToStatus" prefHeight="42.0" prefWidth="149.0" text="Status">
          <font>
             <Font size="16.0" />
@@ -36,5 +28,29 @@
          <font>
             <Font size="16.0" />
          </font></Button>
+      <ImageView fitHeight="623.0" fitWidth="609.0" layoutX="392.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Moon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="treePhrase1" fitHeight="150.0" fitWidth="200.0" layoutX="472.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@assets/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="treePhrase3" fitHeight="368.0" fitWidth="307.0" layoutX="434.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@assets/2.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="treePhrase2" fitHeight="245.0" fitWidth="150.0" layoutX="478.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@assets/3.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn1" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" onAction="#addLemon" prefHeight="130.0" prefWidth="130.0" style="-fx-background-image: .button {  background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;};" visible="false" />
    </children>
 </Pane>

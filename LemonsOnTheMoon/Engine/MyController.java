@@ -19,6 +19,7 @@ import java.net.URL;
 import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.util.ResourceBundle;
 import java.util.Timer;
@@ -45,7 +46,9 @@ public class MyController implements Initializable {
         @FXML
         private TextField txt;
         @FXML
-        private Button btn;        
+        private Button btn;  
+        @FXML
+        private Button btn1;  
         @FXML
         private Pane rootpane;              
         @FXML
@@ -58,6 +61,14 @@ public class MyController implements Initializable {
         private TextField lemonPerMinute;
         @FXML
         private TextField CurrencyUpdater;
+        @FXML
+        private Label tester;
+        @FXML
+        private ImageView treePhrase1;
+        @FXML
+        private ImageView treePhrase2;
+        @FXML
+        private ImageView treePhrase3;
         
         MediaPlayer mediaPlayer;
         
@@ -68,6 +79,7 @@ public class MyController implements Initializable {
        
         //Switch between the game pages.
         //Switch to Play
+        
         public void goToPlay(ActionEvent event) throws IOException {
           clickSFX();
       	  root = FXMLLoader.load(getClass().getResource("Play.fxml"));
@@ -76,21 +88,41 @@ public class MyController implements Initializable {
       	  stage.setScene(scene);
       	  stage.show();
       	  
-      	  idleTimer idleTimer = new idleTimer();
-      	  idleTimer.main();
-      	  
-      	  CurrencyUpdater.setText(Integer.valueOf(idleTimer.lemonCounter).toString());      	  
+      	
+      	      	  
       	 }
         //Decreases the time every 10 seconds when the button is pressed.
-        public void DecreaseTime(ActionEvent event) throws IOException {
+        public void startGame(ActionEvent event) throws IOException {
+        	
+        	 idleTimer idleTimer = new idleTimer();	
         	clickSFX();
-        	  try {
-				idleTimer.second-=10;
-				System.out.println(idleTimer.second);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+        	  idleTimer.main(CurrencyUpdater,treePhrase1,treePhrase2,treePhrase3);
+        	  btn.setVisible(false);
+        	  btn1.setVisible(true);
         	 }
+        
+        int count = 0;
+        public void addLemon(ActionEvent event) throws IOException{
+        	
+        	idleTimer idleTimer = new idleTimer();
+        	idleTimer.lemonCounter++;
+        	
+        	count++;
+        	if(count == 30) {
+        		count = 0;
+        		idleTimer.trees++;
+        				
+        	}
+        	clickSFX();
+        }
+        
+        public void refresh(ActionEvent event) throws IOException{
+        	idleTimer idleTimer = new idleTimer();	
+        	String numberOfLemon = String.valueOf(idleTimer.lemonCounter);
+        	String numberOfTree = String.valueOf(idleTimer.trees);
+        	lemonPerTree.setText(numberOfLemon);
+        	lemonPerMinute.setText(numberOfTree);
+        }
         //Switch scene to How To Play
         public void goToHowToPlay(ActionEvent event) throws IOException {
         	clickSFX();
@@ -137,7 +169,8 @@ public class MyController implements Initializable {
         	  stage.show();
         	 } 
         
-        
+
+    
         //save the game 
         public void saveGame() {
         	
@@ -146,7 +179,8 @@ public class MyController implements Initializable {
         	  
         	  System.out.println("Lemon Per Tree: " + strLemonPerTree + " \n Lemon Per Minute: " + strLemonPerMinute);
         	          	  
-        	  clickerDatabase.insertUserInformation(strLemonPerTree,strLemonPerMinute);
+        	  clickerDatabase db = new clickerDatabase();
+        	  db.insertInformation(strLemonPerTree,strLemonPerMinute);
      	 }
     
         //Volume Controller
