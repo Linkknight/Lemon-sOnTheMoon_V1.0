@@ -20,9 +20,10 @@ public class idleTimer {
 	static int lemonCounter = 0;
 	static int trees = 0;
 	private Timer timer;
-	
+
+
 	public void main(TextField tx, ImageView p1, ImageView p2, ImageView p3){
-//        this.second = 60;
+
       
         timer = new Timer();
         TimerTask task = new TimerTask(){
@@ -53,10 +54,6 @@ public class idleTimer {
                 	 
                 }if(second <0){
                     second = 60;
-                    lemonCounter+=30;
-                    trees+=1;
-                    
-                    
                 }
               
             }
