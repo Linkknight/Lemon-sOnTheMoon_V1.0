@@ -12,13 +12,11 @@ public class clickerDatabase {
     
     public  void insertInformation(String txt1, String txt2) {
     	
-    	
-
-
         String sql = "INSERT INTO Player(LemonPerTree,NumberOfTrees) Values"
         		+ "('" + txt1 + "','"  + txt2 + "')";
                 
         try {
+        	
             Connection con = DriverManager.getConnection(url, user, password);
             Statement st = con.createStatement();
             st.executeUpdate(sql);

@@ -28,10 +28,8 @@ public class ClickerMain extends Application {
        launch(args);
     }
     
-
     @Override
     public void start(Stage stage) throws Exception {    
-    	
     	
     	MyController.music();
         Pane mainPane = (Pane) FXMLLoader.load(ClickerMain.class.getResource("Home.fxml"));

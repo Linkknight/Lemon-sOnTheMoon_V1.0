@@ -12,28 +12,14 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-
-import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Paths;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.Statement;
 import java.util.ResourceBundle;
-import java.util.Timer;
-import java.util.TimerTask;
-import javafx.scene.control.Alert;
-import javafx.stage.Window;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionListener;
 
 public class MyController implements Initializable {
 	
@@ -140,15 +126,6 @@ public class MyController implements Initializable {
       	  stage.setScene(scene);
       	  stage.show();
       	 }       
-        //Switch to Settings.
-        public void goToSettings(ActionEvent event) throws IOException {
-        	clickSFX();
-        	  root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
-        	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        	  scene = new Scene(root);
-        	  stage.setScene(scene);
-        	  stage.show();
-        	 }
         //switch scene to Home
         public void goToHome(ActionEvent event) throws IOException {
         	clickSFX();
@@ -159,8 +136,6 @@ public class MyController implements Initializable {
         	  stage.show();
         	 } 
         
-
-    
         //save the game 
         public void saveGame() {
         	
@@ -172,36 +147,7 @@ public class MyController implements Initializable {
         	  clickerDatabase db = new clickerDatabase();
         	  db.insertInformation(strLemonPerTree,strLemonPerMinute);
      	 }
-    
-        //Volume Controller
-        public void VolumeSlider(ActionEvent event) throws IOException {
-        	
-        	slider.setValue(mediaPlayer.getVolume() * 100);
-        	
-        	//slider.valueProperty().bindBidirectional(mediaPlayer.volumeProperty());
-        	
-        	slider.valueProperty().addListener(new InvalidationListener() {
-        		
-        		public void invalidated(Observable observable) {
-        			
-        			if (slider.isValueChanging()) {
-                    	
-                    	mediaPlayer.setVolume(slider.getValue() / 100);
-                    	
-                    }
-        			
-        		}
-        		
-        	});  
-        	
-        	if (!slider.isValueChanging()) {
-        		
-        		slider.setValue((int)Math.round(mediaPlayer.getVolume() * 100));
-        		
-        	}
-      	  
-      	 }
-        
+           
     	//starts background music
         public void music() {
         	
