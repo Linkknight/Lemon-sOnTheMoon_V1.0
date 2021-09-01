@@ -24,21 +24,16 @@
          <font>
             <Font size="16.0" />
          </font></TextField>
-      <Button layoutX="14.0" layoutY="544.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="42.0" prefWidth="73.0" text="Home">
-         <font>
-            <Font size="16.0" />
-         </font></Button>
       <ImageView fitHeight="623.0" fitWidth="609.0" layoutX="392.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/Moon.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="treePhrase1" fitHeight="150.0" fitWidth="200.0" layoutX="472.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
-         <image>
-            <Image url="@assets/1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="treePhrase2" fitHeight="368.0" fitWidth="307.0" layoutX="434.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <Button layoutX="14.0" layoutY="544.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="42.0" prefWidth="73.0" text="Home">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ImageView fx:id="treePhrase2" fitHeight="368.0" fitWidth="307.0" layoutX="434.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" visible="false">
          <image>
             <Image url="@assets/2.png" />
          </image>
@@ -46,9 +41,14 @@
             <Rectangle2D />
          </viewport>
       </ImageView>
-      <ImageView fx:id="treePhrase3" fitHeight="245.0" fitWidth="150.0" layoutX="478.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView fx:id="treePhrase3" fitHeight="245.0" fitWidth="150.0" layoutX="478.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" visible="false">
          <image>
             <Image url="@assets/3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="treePhrase1" fitHeight="252.0" fitWidth="305.0" layoutX="270.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" visible="false">
+         <image>
+            <Image url="@assets/1.png" />
          </image>
       </ImageView>
       <Button fx:id="btn1" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" onAction="#addLemon" prefHeight="130.0" prefWidth="130.0" style="-fx-background-image: .button {  background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;};" visible="false" />
