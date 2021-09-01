@@ -20,14 +20,14 @@
          <font>
             <Font size="16.0" />
          </font></Button>
-      <Label fx:id="howtolbl" layoutX="289.0" layoutY="44.0" prefHeight="73.0" prefWidth="173.0" text="How To Play" textFill="#e8e84d">
+      <Label fx:id="howtolbl" layoutX="289.0" layoutY="20.0" prefHeight="73.0" prefWidth="173.0" text="How To Play" textFill="#e8e84d">
          <font>
             <Font name="Chiller" size="48.0" />
          </font>
       </Label>
-      <TextArea blendMode="SOFT_LIGHT" editable="false" layoutX="65.0" layoutY="127.0" prefHeight="347.0" prefWidth="620.0" text="This is an idle clicker game which means that the player doesn't have to interact 24/7 for the game to progress.There are buttons on the side of the screen that allow the player to interact with the game when they want.The buttons include an iteract button that speeds up the growth rate of the game only when it is pushedan upgrade button that changes how the game functions including speeding up the growth rateas well as increasing the amount of lemons the player recives.  There is also a save buttonwhich allows the player to save the current upgrades and collected lemon count" wrapText="true">
+      <TextArea blendMode="SOFT_LIGHT" editable="false" layoutX="33.0" layoutY="93.0" prefHeight="394.0" prefWidth="685.0" text="AstroCat Officer Polaris Templeton VII has &quot;successfully&quot; crash-landed on the Moon, the first target of Mission Fruition.  &#10;&#10;Next mission directive: Germination&#10;&#10;Begin the herbalization of J̶u̶p̶i̶t̶e̶r̶ ̶M̶o̶o̶n̶ ̶G̶a̶n̶y̶m̶e̶d̶e̶  Earth Moon Luna via Rutaceae Lemon Plant.  &#10;&#10;Upon completion of full herbalization of Earth Moon Luna you will be heralded as a savior to your people for providing a new and stable food source for AstroCat Colony U36.  &#10;&#10;To enhance the growth rate of the Lemon Plant, we have provided you with a basic growth button where, on click, you will recieve currency equal to the amount of Lemons produced.&#10;&#10;Don't forget to send your reports at the end of every shift with the Status Page and the Save Game Button.&#10;&#10;Best of luck, Young Commander!" wrapText="true">
          <font>
-            <Font name="Corbel Bold" size="22.0" />
+            <Font name="Corbel Bold" size="15.0" />
          </font>
          <effect>
             <ColorAdjust />

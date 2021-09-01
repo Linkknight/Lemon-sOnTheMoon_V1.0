@@ -38,7 +38,7 @@
             <Image url="@assets/1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="treePhrase3" fitHeight="368.0" fitWidth="307.0" layoutX="434.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView fx:id="treePhrase2" fitHeight="368.0" fitWidth="307.0" layoutX="434.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@assets/2.png" />
          </image>
@@ -46,7 +46,7 @@
             <Rectangle2D />
          </viewport>
       </ImageView>
-      <ImageView fx:id="treePhrase2" fitHeight="245.0" fitWidth="150.0" layoutX="478.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView fx:id="treePhrase3" fitHeight="245.0" fitWidth="150.0" layoutX="478.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@assets/3.png" />
          </image>
